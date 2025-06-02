@@ -1,25 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>hwmonitor.portable</id>
-    <version>1.57.0</version>
-    <packageSourceUrl>https://github.com/brogers5/chocolatey-package-hwmonitor.portable/tree/v1.57.0</packageSourceUrl>
-    <owners>sublym0nal</owners>
-    <title>HWMonitor (Portable)</title>
-    <authors>CPUID</authors>
-    <projectUrl>https://www.cpuid.com/softwares/hwmonitor.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/brogers5/chocolatey-package-hwmonitor.portable@0c383bd73211057e25d93d2f7b2ef193280d3737/hwmonitor.portable.png</iconUrl>
-    <copyright>Copyright © CPUID - 2025</copyright>
-    <licenseUrl>https://www.cpuid.com/softwares/hwmonitor-pro/eula.html</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <!--<projectSourceUrl>Project is closed-source</projectSourceUrl>-->
-    <!--<docsUrl>Minimal documentation is available at projectUrl</docsUrl>-->
-    <mailingListUrl>https://www.cpuid.com/contact.html</mailingListUrl>
-    <!--<bugTrackerUrl>No public-facing bug tracker is available</bugTrackerUrl>-->
-    <tags>hardware monitoring temperature sensor fan-speed heath thermal hard-drive smart gpu temps</tags>
-    <summary>Voltage, temperature, and fan speed monitoring</summary>
-    <description><![CDATA[## HWMonitor
+## HWMonitor
 
 HWMonitor is a hardware monitoring program that aggregates several data points from from your PC hardware's sensors, and enables easy tracking of current and some historical (minimum and maximum) values, which can optionally be saved for future reference. These can be useful for performance tests, benchmarks, and troubleshooting.
 
@@ -60,10 +39,3 @@ HWMonitor is a hardware monitoring program that aggregates several data points f
 |`/NoDesktopShortcut`|All environments|Install|Opt out of creating Desktop shortcut(s).|
 |`/NoProgramsShortcut`|All environments|Install|Opt out of creating Programs shortcut(s) in your Start Menu.|
 |`/DontPersistSettings`|All environments|Uninstall|Uninstalling the package will normally exclude the generated settings file (`hwmonitorw.ini`) to facilitate easier reinstallation. This switch will include the file during cleanup.|
-]]></description>
-    <releaseNotes>https://www.cpuid.com/softwares/hwmonitor/versions-history.html</releaseNotes>
-  </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
-</package>
