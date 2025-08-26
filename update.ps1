@@ -38,7 +38,7 @@ function global:au_GetLatest {
         #Check whether the ETag value has changed to determine if we need to force an update
         $lastETagInfo = Get-Content -Path $etagFilePath -Encoding UTF8
         if ($lastETagInfo -ne $currentETagValue) {
-            if ($softwareVersion -le $lastPackageVersion) {
+            if ($version -le $lastPackageVersion) {
                 Write-Warning 'Updated ETag detected, forcing package update'
                 $global:au_Force = $true
             }
