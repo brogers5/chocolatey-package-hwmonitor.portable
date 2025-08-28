@@ -17,7 +17,7 @@
     <!--<docsUrl>Minimal documentation is available at projectUrl</docsUrl>-->
     <mailingListUrl>https://www.cpuid.com/contact.html</mailingListUrl>
     <!--<bugTrackerUrl>No public-facing bug tracker is available</bugTrackerUrl>-->
-    <tags>hardware monitoring temperature sensor fan-speed heath thermal hard-drive smart gpu temps</tags>
+    <tags>hardware monitoring temperature sensor fan-speed health thermal hard-drive smart gpu temps</tags>
     <summary>Voltage, temperature, and fan speed monitoring</summary>
     <description><![CDATA[## HWMonitor
 
