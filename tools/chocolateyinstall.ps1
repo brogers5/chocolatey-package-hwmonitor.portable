@@ -6,7 +6,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $unzipLocation
   url           = 'https://download.cpuid.com/hwmonitor/hwmonitor_1.59.zip'
-  checksum      = 'fb842546561f86e6137a1c879327a0b1863a6a4f7766462fef20211dcc48861e'
+  checksum      = '7d65d454ae1780e0c5d0c2b296124c821a11d18d3c7473015a78a31c89a4009a'
   checksumType  = 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs
