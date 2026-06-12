@@ -34,6 +34,8 @@ function global:au_GetLatest {
     [xml] $nuspec = Get-Content -Path "$($Latest.PackageName).nuspec"
     $lastPackageVersion = [version] $nuspec.package.metadata.version
 
+    
+
     if (!($global:au_Force -or $Force)) {
         #Check whether the ETag value has changed to determine if we need to force an update
         $lastETagInfo = Get-Content -Path $etagFilePath -Encoding UTF8
