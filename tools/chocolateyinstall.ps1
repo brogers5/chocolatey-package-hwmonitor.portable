@@ -5,8 +5,8 @@ $unzipLocation = Join-Path -Path (Get-ToolsLocation) -ChildPath $env:ChocolateyP
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $unzipLocation
-  url           = 'https://download.cpuid.com/hwmonitor/hwmonitor_1.64.zip'
-  checksum      = '8bd677046f36adb4b4451606cd7a0dc7f61ad63f23c2b326a1857172bfcf738a'
+  url           = 'https://download.cpuid.com/hwmonitor/hwmonitor_1.65.zip'
+  checksum      = 'f6a835d2a9690cd13832c79c686d8dc7cb8639c14552978ed21d194b8504a23f'
   checksumType  = 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs
