@@ -27,8 +27,8 @@ function global:au_GetLatest {
     $url = (($page.Links | Where-Object href -Match '/downloads/.*.zip$' | Select-Object -First 1 -Expand href) | ForEach-Object { $_ -replace 'http://www.cpuid.com/downloads', '' -replace '/downloads', '' } | ForEach-Object { "https://download.cpuid.com$_" })
     $version = Get-Version -Version $url
 
-    if ($version -is [version]) {
-        $build = $version.Build
+    if ($version.Version -is [version]) {
+        $build = $version.Version.Build
         if ($build -lt 0) {
             #Pad the version number with a third part of 0 if provided with just two parts
             $version = [version] "$version.0"
